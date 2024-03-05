@@ -1,0 +1,63 @@
+.header_main_header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100%;
+}
+
+.avatar_header_main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.avatar_header_main .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgb(235, 43, 241);
+  border: 2px rgb(227, 227, 227) solid;
+  color: aliceblue;
+}
+
+.avatar_header_main h4 {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: rgb(227, 227, 227);
+}
+
+.button_header {
+  display: none;
+  height: 100%;
+}
+
+.button_header input {
+  border: none;
+  height: 30px;
+  width: 198px;
+  border: 1px solid rgb(153, 153, 154);
+  border-radius: 7px;
+  padding-left: 10px;
+}
+.button_header button {
+  border: none;
+  padding: 8px;
+  color: rgb(153, 153, 154);
+}
+
+@media (min-width: 768px) {
+  .button_header {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

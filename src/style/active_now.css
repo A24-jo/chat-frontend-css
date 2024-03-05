@@ -1,0 +1,40 @@
+.activenow_padre{
+    height: 100%;
+    padding: 10px 10px 0px 10px;
+   h4{
+    color: aliceblue;
+    padding-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+   }
+}
+
+.active_list{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.active_item{
+    border: solid 2px rgb(179, 177, 177);
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .active_item{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .active_item{
+        height: 48px;
+        width: 48px;
+    }
+}

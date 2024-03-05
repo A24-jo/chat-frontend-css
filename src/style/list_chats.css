@@ -1,0 +1,46 @@
+
+.list_chat_padre { 
+  overflow-y: auto;
+  max-height: 45rem;
+  background-color: rgb(144, 175, 202);
+  width: 100%;
+}
+.list_chat_padre::-webkit-scrollbar {
+    width: 0px; /* Ancho de la barra de desplazamiento */
+  }
+
+.item_chat_hijo::after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 2px;
+  background: linear-gradient(
+    to top,
+    rgb(248, 144, 112),
+    rgb(123, 245, 235),
+    rgb(142, 250, 142),
+    rgb(130, 238, 215)
+  );
+}
+.item_chat_hijo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: solid 1.5px rgb(78, 78, 78);
+  padding: 10px 0px 15px 5px;
+  color: aliceblue;
+}
+.item_chat_avatar {
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 20px;
+  border: solid 1px rgb(146, 144, 144);
+}
+
+@media(min-width: 768px){
+    .list_chat_padre{
+        max-height: 25rem;
+    }
+}
